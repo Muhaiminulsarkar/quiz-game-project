@@ -4,22 +4,22 @@ import React from 'react';
 import Option from '../Option/Option';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import './Quizdetails.css'
+import './Qdetails.css'
 
-const Quizdetails = ({ quiz }) => {
+const Qdetails = ({ quiz }) => {
   const { id, options, question, correctAnswer } = quiz;
   const notify = (correct) => toast('Correct Answer =>> ' + correct);
 
 
   const correctChecker = (selectedOption) => {
     if (correctAnswer === selectedOption) {
-      const notify = () => toast("Correct !")
+      const notify = () => toast("The Answer Is Correct !")
       // console.log(notify);
       notify();
 
     }
     else {
-      const notify = () => toast("Wrong !")
+      const notify = () => toast("The Answer Is Wrong !")
       notify();
       // console.log(notify);
     }
@@ -48,4 +48,4 @@ const Quizdetails = ({ quiz }) => {
   );
 };
 
-export default Quizdetails;
+export default Qdetails;
