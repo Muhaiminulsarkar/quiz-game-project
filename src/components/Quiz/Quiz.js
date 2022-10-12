@@ -1,18 +1,18 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import Quizdetails from "../Quizdetails/Quizdetails";
-import './quiz.css'
+import './Quiz.css'
 
 const Quiz = () => {
   const quizes = useLoaderData();
-  const { name, questions, total } = quizes.data;
+  const { name, questions } = quizes.data;
   console.log(questions);
   return (
 
-    <div className="quizSpeContainer">
-      <h3 className="text-center text-primary fw-bold fs-1">Quiz of {name}</h3>
+    <div className="quiz">
+      <h3 className="text-center text-primary fw-bold fs-1">The {name} Quiz</h3>
 
-      <div className="qAndA">
+      <div className="details">
         {questions.map((quiz) => (
           <Quizdetails key={quiz.id} quiz={quiz}></Quizdetails>
         ))}

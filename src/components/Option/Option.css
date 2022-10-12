@@ -1,11 +1,11 @@
-.eachOption {
+.Option {
     border: 2px solid rgb(17, 110, 250);
     border-radius: 5px;
     padding: 20px;
     margin: 0;
 }
 
-.eachOption:hover {
+.Option:hover {
     background-color: #277dff;
     color: white;
     cursor: pointer;

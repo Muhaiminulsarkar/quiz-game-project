@@ -4,7 +4,7 @@ import './Option.css'
 const Option = ({ option, correctChecker }) => {
 
   return (
-    <div onClick={() => correctChecker(option)} className="eachOption">
+    <div onClick={() => correctChecker(option)} className="Option">
       <p className='fw-bold'>{option}</p>
     </div>
   );
