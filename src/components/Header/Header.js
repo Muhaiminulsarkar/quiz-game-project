@@ -6,24 +6,24 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-    return (
-        <div>
-             <Navbar bg="light" expand="lg">
-      <Container>
-        <Navbar.Brand className='fw-bold fs-3'>MegaQuiz</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-          <Nav.Link as={Link} to={"/"}>Topics</Nav.Link>
-          <Nav.Link as={Link} to={"/statistics"}>Statistics</Nav.Link>
-          <Nav.Link as={Link} to={"/blog"}>Blog</Nav.Link>
-            
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-        </div>
-    );
+  return (
+    <div>
+      <Navbar bg="light" expand="lg">
+        <Container>
+          <Navbar.Brand className='fw-bold fs-3'>MegaQuiz</Navbar.Brand>
+          <Navbar.Toggle aria-controls="basic-navbar-nav" />
+          <Navbar.Collapse id="basic-navbar-nav">
+            <Nav className="mx-auto">
+              <Nav.Link as={Link} to={"/"}>Topics</Nav.Link>
+              <Nav.Link as={Link} to={"/statistics"}>Statistics</Nav.Link>
+              <Nav.Link as={Link} to={"/blog"}>Blog</Nav.Link>
+
+            </Nav>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
+    </div>
+  );
 };
 
 export default Header;
