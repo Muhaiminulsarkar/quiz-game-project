@@ -7,22 +7,21 @@ import { Link } from "react-router-dom";
 
 
 const Topic = ({ topic }) => {
-  const {id,logo, name } = topic;
+  const { id, logo, name } = topic;
   return (
     <div>
       <div className="col container">
         <div className="card">
-          <img src={logo} className="card-img-top" alt="..." />
+          <img src={logo} className="card-img-top card-background" alt="..." />
           <div className="card-body d-flex justify-content-between align-items-center">
             <h5 className="card-title">{name}</h5>
             <Link to={`./quiz/${id}`}>
-            <button className="btn btn-primary">
-                select Topics
-                <FontAwesomeIcon icon={faArrowRight} />
-                
-            </button>
-                    </Link>
-           
+              <button className="btn btn-primary">
+                Select Here <FontAwesomeIcon icon={faArrowRight} />
+
+              </button>
+            </Link>
+
           </div>
         </div>
       </div>
