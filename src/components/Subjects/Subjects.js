@@ -3,7 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 import Hero from '../Hero/Hero';
 import Topic from '../Topic/Topic';
 
-const Topics = () => {
+const Subjects = () => {
     const topics = useLoaderData();
     console.log(topics.data)
     return (
@@ -24,4 +24,4 @@ const Topics = () => {
     );
 };
 
-export default Topics;
+export default Subjects;

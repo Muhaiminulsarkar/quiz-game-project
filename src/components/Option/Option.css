@@ -1,11 +1,12 @@
-.eachOption{
-    border: 1px solid rgb(0, 248, 215);
+.eachOption {
+    border: 2px solid rgb(17, 110, 250);
     border-radius: 5px;
     padding: 20px;
     margin: 0;
 }
-.eachOption:hover{
-    background-color: #B6E2F7;
+
+.eachOption:hover {
+    background-color: #277dff;
     color: white;
     cursor: pointer;
 }

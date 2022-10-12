@@ -10,7 +10,7 @@ const Quiz = () => {
   return (
 
     <div className="quizSpeContainer">
-      <h3 className="text-center">Quiz of {name}</h3>
+      <h3 className="text-center text-primary fw-bold fs-1">Quiz of {name}</h3>
 
       <div className="qAndA">
         {questions.map((quiz) => (
